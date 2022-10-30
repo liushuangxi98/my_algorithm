@@ -1,11 +1,4 @@
-def myfunc(n):
-  return lambda a: a * n
-
-mydoubler = myfunc(2)
-
-mydoubler = lambda a: a * 2
-def mydoubler(a):
-    return a*2
-
-
-print(mydoubler(11))
+import re
+a = 'favadaf1234[dfsfs]'
+res = re.findall('va\w??',a)
+print(res)
